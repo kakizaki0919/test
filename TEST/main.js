@@ -26,5 +26,8 @@ navigator.geolocation.getCurrentPosition((position)=>{
     }
   ).addTo(map);
 
+  const mark = L.marker([lat.textContent,lng.textContent]);
+  mark.addTo(map);
+
 });
 
