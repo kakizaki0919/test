@@ -12,10 +12,10 @@ navigator.geolocation.getCurrentPosition((position)=>{
   let lng2 = coords.longitude.toFixed(2)
 
 
-  console.log(lat2);
+  console.log(lat.textContent);
 
   let map = L.map("map"); // 地図の生成
-  map.setView([lat2,lng2], zoom); // 緯度経度、ズームレベルを設定する
+  map.setView([lat.textContent,lng.textContent], zoom); // 緯度経度、ズームレベルを設定する
 
   // タイルレイヤを生成し、地図に追加する
   // 今回はOpenStreetMapを表示する
